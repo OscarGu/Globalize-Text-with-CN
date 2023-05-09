@@ -55,7 +55,7 @@ with col1:
     st.markdown("该应用旨在通过将您的电子邮件转换为\n 更专业的格式和内容来提升您的电子邮件技巧。\n该工具由OpenAI-GPT模型提供技术支持，并由@Oscar Gu进行了模型微调。\n可在我的Github仓库中查看源代码。")
 
 with col2:
-    st.image(image='TweetScreenshot.png', width=500, caption='https://twitter.com/DannyRichman/status/1598254671591723008')
+    st.image(image='TweetScreenshot.png', width=400, caption='https://twitter.com/DannyRichman/status/1598254671591723008')
 
 st.markdown("## Enter Your Email To Convert")
 
