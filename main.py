@@ -51,8 +51,8 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.markdown("The application is to improve your email skills by converting your emails into a more professional format. \n\n This tool \
-                is powered by [OpenAI](https://openai.com) and modified by [@Oscar Gu](https://github.com/OscarGu). \n\n View Source Code on [Github](https://github.com/OscarGu/Globalize-Text-with-CN/edit/main/main.py) \n\n
-                该应用旨在通过将您的电子邮件转换为\n 更专业的格式来提升您的电子邮件技巧。\n该工具由OpenAI-GPT模型提供技术支持，并由@Oscar Gu进行了模型微调。\n可在我的Github仓库中查看源代码。")
+                is powered by [OpenAI](https://openai.com) and modified by [@Oscar Gu](https://github.com/OscarGu). \n\n View Source Code on [Github](https://github.com/OscarGu/Globalize-Text-with-CN/edit/main/main.py) \n\n")
+    st.markdown("该应用旨在通过将您的电子邮件转换为\n 更专业的格式和内容来提升您的电子邮件技巧。\n该工具由OpenAI-GPT模型提供技术支持，并由@Oscar Gu进行了模型微调。\n可在我的Github仓库中查看源代码。")
 
 with col2:
     st.image(image='TweetScreenshot.png', width=500, caption='https://twitter.com/DannyRichman/status/1598254671591723008')
@@ -76,10 +76,10 @@ with col2:
         'Which English Dialect would you like?',
         ('American', 'British'))
     
-with col3:
-    option_lang = st.selectbox(
-        'Which Language would you like?',
-        ('EN', 'CN'))
+# with col3:
+#    option_lang = st.selectbox(
+#        'Which Language would you like?',
+#        ('EN', 'CN'))
 
 def get_text():
     input_text = st.text_area(label="Email Input", label_visibility='collapsed', placeholder="Your Email...", key="email_input")
