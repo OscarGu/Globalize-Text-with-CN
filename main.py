@@ -28,13 +28,12 @@ template = """
     TONE: {tone}
     DIALECT: {dialect}
     EMAIL: {email}
-    LANG: {lang}
-    
-    YOUR {dialect} RESPONSE in {lang}:
+        
+    YOUR {dialect} RESPONSE:
 """
 
 prompt = PromptTemplate(
-    input_variables=["tone", "dialect", "email","lang"],
+    input_variables=["tone", "dialect", "email"],
     template=template,
 )
 
@@ -106,7 +105,7 @@ if email_input:
 
     llm = load_LLM(openai_api_key=openai_api_key)
 
-    prompt_with_email = prompt.format(tone=option_tone, dialect=option_dialect, email=email_input, lang=option_lang)
+    prompt_with_email = prompt.format(tone=option_tone, dialect=option_dialect, email=email_input)
 
     formatted_email = llm(prompt_with_email)
 
