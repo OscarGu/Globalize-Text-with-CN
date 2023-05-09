@@ -51,8 +51,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.markdown("The application is to improve your email skills by converting your emails into a more professional format. \n\n This tool \
-                is powered by [LangChain](https://langchain.com/) and [OpenAI](https://openai.com) and made by \
-                [@GregKamradt](https://twitter.com/GregKamradt), modified by [@Oscar Gu](https://github.com/OscarGu) to add an simple translate prompt. \n\n View Source Code on [Github](https://github.com/OscarGu/Globalize-Text-with-CN/edit/main/main.py)")
+                is powered by [OpenAI](https://openai.com) and modified by [@Oscar Gu](https://github.com/OscarGu). \n\n View Source Code on [Github](https://github.com/OscarGu/Globalize-Text-with-CN/edit/main/main.py)")
 
 with col2:
     st.image(image='TweetScreenshot.png', width=500, caption='https://twitter.com/DannyRichman/status/1598254671591723008')
